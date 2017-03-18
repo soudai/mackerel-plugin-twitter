@@ -1,0 +1,7 @@
+{
+    "require": {
+        "php": ">=5.6.0",
+        "mpyw/twistoauth": "3.5.2",
+        "ariarijp/mackerel-client": "dev-master"
+    }
+}
