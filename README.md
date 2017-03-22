@@ -46,13 +46,12 @@ Generating autoload files
 # mackerel-agentのインストール
 https://mackerel.io/my/instruction-agent
 
-# mackerel-agentの設定
-`$ vim /etc/mackerel-agent/mackerel-agent.conf`
+# crontabの設定
+`$ crontab -e`
 
 下記を末尾に追加
 ```
-[plugin.metrics.twitter]
-command = "/usr/bin/php /インストールパス/mackerel-plugin-twitter/monitoring.php"
+*/1 * * * * /usr/bin/php /インストールパス/mackerel-plugin-twitter/monitoring.php
 ```
 
 `$ sudo /etc/init.d/mackerel-agent restart`
