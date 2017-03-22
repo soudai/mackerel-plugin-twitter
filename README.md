@@ -54,6 +54,5 @@ https://mackerel.io/my/instruction-agent
 */1 * * * * /usr/bin/php /インストールパス/mackerel-plugin-twitter/monitoring.php
 ```
 
-`$ sudo /etc/init.d/mackerel-agent restart`
 
 管理画面のサービスメトリック名にグラフが描画されれば成功
